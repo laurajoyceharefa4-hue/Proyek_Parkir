@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Konfigurasi rahasia
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Flutter dan Dart
+.dart_tool/
+.pub/
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+.gradle/
+local.properties
+key.properties
+*.jks
+*.keystore
+
+# File sementara
+*.log
+.DS_Store
+Thumbs.db
+# Database lokal dan file pendamping SQLite
+*.sqlite3
+*.sqlite3-*
+*.sqlite
+*.sqlite-*
+
+# File cadangan
+*.bak
+
+# Referensi desain lokal
+.stitch_ref/

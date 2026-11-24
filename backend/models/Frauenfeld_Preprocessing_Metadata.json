@@ -1,0 +1,43 @@
+{
+  "source": "Stadt Frauenfeld - Smart Parking",
+  "site": "1 | Oberes M\u00e4tteli",
+  "interval_minutes": 10,
+  "max_measurement_age_minutes": 6,
+  "history_minutes": 120,
+  "horizons_minutes": [
+    10,
+    20,
+    30
+  ],
+  "features": [
+    "available_now",
+    "occupied_now",
+    "capacity_now",
+    "lag_10m",
+    "lag_20m",
+    "lag_30m",
+    "lag_60m",
+    "lag_120m",
+    "rolling_mean_30m",
+    "rolling_mean_60m",
+    "change_10m",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend"
+  ],
+  "targets": [
+    "target_10m",
+    "target_20m",
+    "target_30m"
+  ],
+  "train_samples": 2808,
+  "validation_samples": 600,
+  "test_samples": 603,
+  "train_validation_boundary": "2024-09-22T14:30:00+00:00",
+  "validation_test_boundary": "2024-09-26T19:00:00+00:00",
+  "split_gap_minutes": 30,
+  "random_shuffle": false,
+  "total_samples": 4017
+}
