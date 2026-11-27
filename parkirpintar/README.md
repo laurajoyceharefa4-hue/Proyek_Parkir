@@ -1,17 +1,16 @@
-# parkirpintar
+# ParkirPintar — Aplikasi Flutter
 
-A new Flutter project.
+Aplikasi Flutter untuk mengakses prediksi ketersediaan slot parkir 10, 20, dan 30 menit dari backend FastAPI.
 
-## Getting Started
+Panduan instalasi backend, pembuatan akun superadmin, konfigurasi jaringan, pengujian, dan build APK tersedia pada [README utama proyek](../README.md).
 
-This project is a starting point for a Flutter application.
+Dari folder ini, setelah backend berjalan dan alamat IP laptop diketahui:
 
-A few resources to get you started if this is your first Flutter project:
+```powershell
+flutter pub get
+flutter run --dart-define=API_BASE_URL=http://192.168.1.10:8001
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Ganti `192.168.1.10` dengan IP laptop yang menjalankan backend. Alamat juga dapat diperbarui melalui Pengaturan Server di aplikasi.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Aplikasi menggunakan data historis; nilai yang ditampilkan bukan pembacaan sensor parkir real-time.
